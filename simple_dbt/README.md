@@ -1,4 +1,9 @@
-Welcome to your new dbt project!
+# Welcome to your new dbt project!
+
+### Data Credit
+
+https://github.com/dbt-labs/jaffle_shop/tree/main/data
+
 
 ### Using the starter project
 
