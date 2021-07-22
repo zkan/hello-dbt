@@ -2,13 +2,13 @@
 
 with customers as (
 
-    select * from {{ ref("customers") }}
+    select * from {{ ref('customers') }}
 
 ),
 
 orders as (
 
-    select * from {{ ref("orders") }}
+    select * from {{ ref('orders') }}
 
 ),
 
