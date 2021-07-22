@@ -1,0 +1,12 @@
+# models/schema.yml
+
+version: 2
+
+models:
+  - name: final
+    columns:
+      - name: status
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['placed', 'shipped', 'completed', 'returned', 'return_pending']
