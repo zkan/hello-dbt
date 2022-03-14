@@ -5,5 +5,31 @@ sources:
     schema: public
     tables:
       - name: jaffle_shop_customer
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
       - name: jaffle_shop_order
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+          - name: status
+            tests:
+              - accepted_values:
+                  values:
+                    - completed
+                    - shipped
+                    - returned
+                    - placed
+                    - return_pending
       - name: stripe_payment
+        columns:
+          - name: status
+            tests:
+              - accepted_values:
+                  values:
+                    - success
+                    - fail
