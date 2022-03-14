@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    schema: public
+    tables:
+      - name: jaffle_shop_customer
+      - name: jaffle_shop_order
+      - name: stripe_payment
