@@ -1,4 +1,7 @@
-
+ENV/
 target/
 dbt_modules/
 logs/
+*.swp
+.DS_Store
+.user.yml
