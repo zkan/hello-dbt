@@ -16,7 +16,7 @@ dataengineercafe:
       method: service-account
       keyfile: "{{ env_var('BIGQUERY_KEYFILE') }}"
       project: dataengineercafe
-      dataset: main
+      dataset: analytics
       location: asia-southeast1
       threads: 1
       timeout_seconds: 300
