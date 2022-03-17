@@ -4,7 +4,8 @@ SELECT
   jso.user_id AS user_id,
   sp.paymentmethod AS payment_method,
   sp.status AS payment_status,
-  sp.amount
+  sp.amount AS amount,
+  {{ dollars_to_bahts('amount') }} AS amount_in_baht
 FROM
   {{ source('jaffle_shop', 'stripe_payment') }} sp
 JOIN
