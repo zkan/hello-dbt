@@ -1,0 +1,23 @@
+dataengineercafe:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      keyfile: "{{ env_var('BIGQUERY_KEYFILE') }}"
+      project: dataengineercafe
+      dataset: dbt_zkan
+      location: asia-southeast1
+      threads: 1
+      timeout_seconds: 300
+      priority: interactive
+    prod:
+      type: bigquery
+      method: service-account
+      keyfile: "{{ env_var('BIGQUERY_KEYFILE') }}"
+      project: dataengineercafe
+      dataset: main
+      location: asia-southeast1
+      threads: 1
+      timeout_seconds: 300
+      priority: interactive
