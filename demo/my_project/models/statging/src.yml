@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: demo
+    schema: public
+    database: demo
+
+    tables:
+      - name: raw_customers
+        description: Raw customers
+      - name: raw_orders
+        description: Raw orders
+      - name: raw_payments
+        description: Raw payments

@@ -1,0 +1,23 @@
+my_project:
+  outputs:
+    dbt_zkan:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 5432
+      user: postgres
+      pass: postgres
+      dbname: demo
+      schema: dbt_zkan
+
+    prod:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 5432
+      user: postgres
+      pass: postgres
+      dbname: demo
+      schema: prod
+
+  target: dbt_zkan
