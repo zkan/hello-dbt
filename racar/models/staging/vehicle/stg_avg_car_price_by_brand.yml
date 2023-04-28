@@ -1,9 +1,0 @@
-version: 2
-
-models:
-  - name: stg_avg_car_price_by_brand
-    columns:
-      - name: brand
-        tests:
-          - unique
-          - not_null
