@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "with-spark"
+version = "0.1.0"
+description = ""
+authors = ["zkan <zkan.cs@gmail.com>"]
+readme = "README.md"
+packages = [{include = "with_spark"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+dbt-core = "^1.7.11"
+dbt-spark = {extras = ["pyhive"], version = "^1.7.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
