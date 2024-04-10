@@ -1,0 +1,9 @@
+demo:
+  target: local
+  outputs:
+    local:
+      type: spark
+      method: thrift
+      host: localhost
+      schema: default
+      port: 10000
