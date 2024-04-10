@@ -1,0 +1,6 @@
+storage
+*.log
+logs
+metastore_db
+.DS_Store
+spark-3.5.1-bin-hadoop3*
