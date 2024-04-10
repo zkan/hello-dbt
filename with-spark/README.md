@@ -1,14 +1,16 @@
 # dbt with Spark
 
-Running Spark Thrift Server
+Download Spark 3.5.1 [here](https://www.apache.org/dyn/closer.lua/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz).
+
+## Running Spark Thrift Server
 
 ```bash
-git clone https://github.com/dbt-labs/dbt-spark
-cd dbt-spark
-docker compose up
+./spark-3.5.1-bin-hadoop3/sbin/start-thriftserver.sh --conf spark.sql.legacy.allowNonEmptyLocationInCTAS=true
 ```
 
-Installing Poetry
+**Note:** To allow overwriting the existing non-empty directory, set 'spark.sql.legacy.allowNonEmptyLocationInCTAS' to true.
+
+## Installing Poetry
 
 ```bash
 curl -sSL https://install.python-poetry.org | python3 -
